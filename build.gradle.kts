@@ -17,12 +17,14 @@ repositories {
 
 buildscript {
     dependencies {
-        classpath("software.amazon.smithy:smithy-openapi:1.21.0")
-        classpath("software.amazon.smithy:smithy-aws-traits:1.21.0")
+        val smithyVersion = "1.25.2"
+        classpath("software.amazon.smithy:smithy-openapi:$smithyVersion")
+        classpath("software.amazon.smithy:smithy-aws-traits:$smithyVersion")
+        classpath("software.amazon.smithy:smithy-cli:$smithyVersion")
     }
 }
 
 dependencies {
-    implementation("software.amazon.smithy:smithy-model:1.21.0")
-    implementation("software.amazon.smithy:smithy-aws-traits:1.21.0")
+    implementation("software.amazon.smithy:smithy-model:1.25.2")
+    implementation("software.amazon.smithy:smithy-aws-traits:1.25.2")
 }

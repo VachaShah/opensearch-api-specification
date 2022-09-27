@@ -12,6 +12,7 @@ use aws.protocols#restJson1
     "OpenSearch Documentation": "https://opensearch.org/docs/latest/"
 )
 
+@httpBasicAuth
 @restJson1
 service OpenSearch {
     version: "2021-11-23",

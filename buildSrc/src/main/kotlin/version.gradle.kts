@@ -1,0 +1,1 @@
+const val smithyVersion = "1.21.0"

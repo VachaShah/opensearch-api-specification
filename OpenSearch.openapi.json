@@ -49,6 +49,15 @@
                         "in": "query",
                         "schema": {
                             "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
                             "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
@@ -90,6 +99,23 @@
                 "operationId": "GetCatIndices",
                 "parameters": [
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "bytes",
                         "in": "query",
                         "schema": {
@@ -122,14 +148,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -184,6 +202,23 @@
                         }
                     },
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "bytes",
                         "in": "query",
                         "schema": {
@@ -216,14 +251,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -262,6 +289,23 @@
                 "operationId": "GetCatNodes",
                 "parameters": [
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "bytes",
                         "in": "query",
                         "schema": {
@@ -280,14 +324,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -333,6 +369,23 @@
                 "operationId": "GetClusterSettings",
                 "parameters": [
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "flat_settings",
                         "in": "query",
                         "schema": {
@@ -351,14 +404,6 @@
                                 "description": "",
                                 "value": true
                             }
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     }
                 ],
@@ -396,18 +441,27 @@
                 },
                 "parameters": [
                     {
-                        "name": "flat_settings",
-                        "in": "query",
-                        "schema": {
-                            "type": "boolean"
-                        }
-                    },
-                    {
                         "name": "master_timeout",
                         "in": "query",
                         "schema": {
                             "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
                             "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
+                        "name": "flat_settings",
+                        "in": "query",
+                        "schema": {
+                            "type": "boolean"
                         }
                     },
                     {
@@ -442,6 +496,20 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/PostSearchRequestContent"
+                            },
+                            "examples": {
+                                "PostSearch_example1": {
+                                    "summary": "Examples for Post Search Operation.",
+                                    "description": "",
+                                    "value": {
+                                        "query": {
+                                            "match_all": {}
+                                        },
+                                        "fields": [
+                                            "*"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -607,6 +675,13 @@
                         "schema": {
                             "type": "string",
                             "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        },
+                        "examples": {
+                            "PostSearch_example1": {
+                                "summary": "Examples for Post Search Operation.",
+                                "description": "",
+                                "value": "1d"
+                            }
                         }
                     },
                     {
@@ -766,6 +841,28 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/PostSearchResponseContent"
+                                },
+                                "examples": {
+                                    "PostSearch_example1": {
+                                        "summary": "Examples for Post Search Operation.",
+                                        "description": "",
+                                        "value": {
+                                            "timed_out": false,
+                                            "_shards": {
+                                                "total": 1,
+                                                "successful": 1,
+                                                "skipped": 0,
+                                                "failed": 0
+                                            },
+                                            "hits": {
+                                                "total": {
+                                                    "value": 0,
+                                                    "relation": "eq"
+                                                },
+                                                "hits": []
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -795,6 +892,23 @@
                         }
                     },
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "allow_no_indices",
                         "in": "query",
                         "schema": {
@@ -813,14 +927,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -891,6 +997,23 @@
                         }
                     },
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "include_type_name",
                         "in": "query",
                         "schema": {
@@ -902,14 +1025,6 @@
                         "in": "query",
                         "schema": {
                             "type": "string"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -1067,7 +1182,6 @@
                                         "description": "",
                                         "value": {
                                             "_index": "books",
-                                            "_type": "_doc",
                                             "_id": "1",
                                             "found": true
                                         }
@@ -1117,6 +1231,23 @@
                         }
                     },
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "allow_no_indices",
                         "in": "query",
                         "schema": {
@@ -1142,14 +1273,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -1200,6 +1323,20 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/PostSearchWithIndexRequestContent"
+                            },
+                            "examples": {
+                                "PostSearchWithIndex_example1": {
+                                    "summary": "Examples for Post Search With Index Operation.",
+                                    "description": "",
+                                    "value": {
+                                        "query": {
+                                            "match_all": {}
+                                        },
+                                        "fields": [
+                                            "*"
+                                        ]
+                                    }
+                                }
                             }
                         }
                     }
@@ -1212,7 +1349,14 @@
                             "type": "string",
                             "pattern": "^[^+_\\-\\.][^\\\\, /*?\"<>| ,#\\nA-Z]+$"
                         },
-                        "required": true
+                        "required": true,
+                        "examples": {
+                            "PostSearchWithIndex_example1": {
+                                "summary": "Examples for Post Search With Index Operation.",
+                                "description": "",
+                                "value": "books"
+                            }
+                        }
                     },
                     {
                         "name": "allow_no_indices",
@@ -1374,6 +1518,13 @@
                         "schema": {
                             "type": "string",
                             "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        },
+                        "examples": {
+                            "PostSearchWithIndex_example1": {
+                                "summary": "Examples for Post Search With Index Operation.",
+                                "description": "",
+                                "value": "1d"
+                            }
                         }
                     },
                     {
@@ -1533,6 +1684,28 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/PostSearchWithIndexResponseContent"
+                                },
+                                "examples": {
+                                    "PostSearchWithIndex_example1": {
+                                        "summary": "Examples for Post Search With Index Operation.",
+                                        "description": "",
+                                        "value": {
+                                            "timed_out": false,
+                                            "_shards": {
+                                                "total": 1,
+                                                "successful": 1,
+                                                "skipped": 0,
+                                                "failed": 0
+                                            },
+                                            "hits": {
+                                                "total": {
+                                                    "value": 0,
+                                                    "relation": "eq"
+                                                },
+                                                "hits": []
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -1559,6 +1732,23 @@
                                 "description": "",
                                 "value": "books"
                             }
+                        }
+                    },
+                    {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     },
                     {
@@ -1601,14 +1791,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     }
                 ],
@@ -1663,6 +1845,23 @@
                         }
                     },
                     {
+                        "name": "master_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$",
+                            "deprecated": true
+                        }
+                    },
+                    {
+                        "name": "cluster_manager_timeout",
+                        "in": "query",
+                        "schema": {
+                            "type": "string",
+                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
+                        }
+                    },
+                    {
                         "name": "allow_no_indices",
                         "in": "query",
                         "schema": {
@@ -1702,14 +1901,6 @@
                         "in": "query",
                         "schema": {
                             "type": "boolean"
-                        }
-                    },
-                    {
-                        "name": "master_timeout",
-                        "in": "query",
-                        "schema": {
-                            "type": "string",
-                            "pattern": "^([0-9]+)(?:d|h|m|s|ms|micros|nanos)$"
                         }
                     }
                 ],
@@ -1958,7 +2149,6 @@
                 "required": [
                     "_id",
                     "_index",
-                    "_type",
                     "found"
                 ]
             },
@@ -2156,10 +2346,6 @@
             "PostSearchWithIndexResponseContent": {
                 "type": "object",
                 "properties": {
-                    "index": {
-                        "type": "string",
-                        "pattern": "^[^+_\\-\\.][^\\\\, /*?\"<>| ,#\\nA-Z]+$"
-                    },
                     "_scroll_id": {
                         "type": "string"
                     },
@@ -2175,10 +2361,7 @@
                     "hits": {
                         "$ref": "#/components/schemas/HitsMetadata"
                     }
-                },
-                "required": [
-                    "index"
-                ]
+                }
             },
             "PutCreateIndexRequestContent": {
                 "type": "object",
